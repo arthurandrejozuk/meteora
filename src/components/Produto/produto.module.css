@@ -1,0 +1,35 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+     margin-top: 8px;
+}
+
+.card_desc{
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+   
+    border-right: 1px solid #b6b6b6;
+    border-left: 1px solid #b6b6b6;
+    border-bottom:1px solid #b6b6b6 ;
+    padding: 12px;
+    h5{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    strong{
+        font-weight: 700;
+    }
+    button{
+        width: 100px;
+        color: white;
+        background-color: #9353FF;
+        padding: 8px;
+        border: none;
+    }
+}

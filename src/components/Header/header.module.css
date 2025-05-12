@@ -1,0 +1,130 @@
+.header_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: black;
+     z-index: 100;
+    .logo{
+        margin-right: 44px;
+    }
+   
+}   
+
+.div_options{
+    display: flex;
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    a:hover{
+        color: #DAFF01;
+    }
+}
+
+.div_ul{
+    display: flex;
+}
+
+.ul_option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.header_input{
+    display: flex;
+    gap: 12px;
+    input{
+        padding: 8px;
+        width: 140px;
+    };
+    button{
+        padding: 8px;
+        color: black;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+    }
+}
+.login_sign{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.signin{
+    padding: 8px;
+   padding-right: 12px;
+    padding-left: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.login_container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login{
+    padding: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: #9353FF;
+    border: 1px solid #9353FF;
+    color: white;
+}
+.icon_hamb{
+    display: none;
+}
+
+.avatar{
+    width: 40px;
+   
+    img{
+        margin-right: 0px
+    };
+}
+.logged{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+     a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1024px){
+    .login_sign{
+        display: none;
+    }
+
+    .leave{
+        display: none;
+    }
+
+    .div_ul{
+        display: none;
+    }
+
+    .icon_hamb{
+        display: flex;
+        font-size: 28px;
+        margin-right: 8px;
+    }
+    
+}
+
+@media(max-width: 768px){
+  .header_input{
+    display: none;
+  }
+}   
