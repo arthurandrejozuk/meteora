@@ -4,7 +4,7 @@ import styles from "./header.module.css"
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Avatar from "../../assets/Desktop/Ícones/ícone-avatar.png";
 
-export default function Header({logged, ativarMenu}:{logged:boolean, ativarMenu: () => void}){
+export default function Header({logged, ativarMenu, ativarModal}:{logged:boolean, ativarMenu: () => void, ativarModal: () => void}){
     return(
         <header className={styles.header_container}>
             <div className={styles.div_options}>
@@ -35,7 +35,7 @@ export default function Header({logged, ativarMenu}:{logged:boolean, ativarMenu:
             <div className={styles.login_container}>
                 {!logged ? (
                 <div className={styles.login_sign}>
-                    <button className={styles.login}>
+                    <button onClick={ativarModal} className={styles.login}>
                         Login
                     </button>
                     <button className={styles.signin}>

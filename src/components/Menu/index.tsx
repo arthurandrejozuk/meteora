@@ -1,7 +1,7 @@
 import styles from "./menu.module.css";
 
 
-export default function Menu({logged, active}:{logged:boolean, active: boolean}){
+export default function Menu({logged, active, abrirModal}:{logged:boolean, active: boolean, abrirModal: () => void}){
     
     if(active){
         return(
@@ -25,7 +25,7 @@ export default function Menu({logged, active}:{logged:boolean, active: boolean})
                     <div className="menu_account">
                         {logged ? (
                             <div className={styles.login_sign}>
-                                <button className={styles.login}>
+                                <button onClick={abrirModal} className={styles.login}>
                                     Login
                                 </button>
                                 <button className={styles.signin}>

@@ -13,8 +13,9 @@
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
+    cursor: pointer;
 }
-
+ 
 .categoria_item{
     display: flex;
     flex-direction: column;
@@ -22,6 +23,10 @@
     gap: 8px;
     color: white;
     background-color: black;
-    
-    padding-bottom:8px ;
+    transition: 500ms;
+    padding-bottom:8px;
+}
+
+.categoria_item:hover{
+    transform: scale(1.1);
 }

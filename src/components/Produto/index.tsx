@@ -1,17 +1,10 @@
 
+import type { IProduto } from "../../interfaces/Produto"
 import styles from "./produto.module.css"
 
-export default function Produto(){
+export default function Produto(produto: IProduto){
 
-    const produto = {
-        id: 1,
-        img: "../../assets/Desktop/Imagens Cards/Bolsa.png",
-        title: "Bolsa coringa",
-        desc: "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
-        price: 120,
-        href: "",
-        categoria: "bolsas"
-    }
+  
 
     return(
         <div className={styles.card}  key={produto.id}>

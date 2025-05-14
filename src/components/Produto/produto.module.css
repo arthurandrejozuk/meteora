@@ -30,6 +30,11 @@
         color: white;
         background-color: #9353FF;
         padding: 8px;
+        cursor: pointer;
         border: none;
+        transition: 200ms;
+    }
+    button:hover{
+        background-color: #833cfd;
     }
 }
